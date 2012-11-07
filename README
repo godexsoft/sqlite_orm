@@ -1,0 +1,27 @@
+Simple C++ ORM for SQLite.
+Originally this was made to support simple cases in iOS games. For example storing scores.
+
+The ORM supports foreign collections and lazy loading.
+
+=== Dependencies ===
+- Sqlite3pp (included. see ext)
+- boost.bind, boost.any and some other boost libraries
+
+=== Usage ===
+For basic usage information please see my blog post: http://alex.tapmania.org/2011/12/simple-sqlite-orm-for-c.html
+
+- Raw SQL
+db_.execute(sql.c_str());
+
+- Query with arguments
+std::map<std::string, boost::any> a;
+a[":score"] = 100000;
+a[":user_id"] = user.get_id();
+
+boost::shared_ptr<score> r = score_dao_obj.query_first(
+   "WHERE user_id = :user_id AND score >= :score", a);
+
+if(score)
+{
+    cout << "Found score higher than 100000 for user with the given ID.\n";
+}
