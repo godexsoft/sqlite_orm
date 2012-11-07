@@ -62,7 +62,7 @@ namespace orm {
         }
     };
     
-    class base_model;
+    struct base_model;
     
     struct base_field
     {
@@ -642,6 +642,8 @@ namespace orm {
     : public base_model
     {
     public:
+        friend class sqlite::orm::dao<T>;
+        
         model()
         : id__(-1)
         {
@@ -711,7 +713,7 @@ void init()\
 static bool _init = false; \
 if(!_init)\
 {\
-model<MODEL_NAME>::add_field(this, offsetof(MODEL_NAME, name));\
+sqlite::orm::model<MODEL_NAME>::add_field(this, offsetof(MODEL_NAME, name));\
 _init = true; \
 }\
 }\
@@ -979,7 +981,7 @@ struct foreign_collection_##cls \
         static bool _init = false; \
         if(!_init)\
         {\
-            model<MODEL_NAME>::add_foreign_collection(this, offsetof(MODEL_NAME, name##_));\
+            sqlite::orm::model<MODEL_NAME>::add_foreign_collection(this, offsetof(MODEL_NAME, name##_));\
             _init = true; \
         }\
     }\
