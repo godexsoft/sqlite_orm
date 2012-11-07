@@ -9,6 +9,7 @@ The ORM supports foreign collections and lazy loading.
 
 === Usage ===
 For basic usage information please see my blog post: http://alex.tapmania.org/2011/12/simple-sqlite-orm-for-c.html
+and the example project included.
 
 - Raw SQL
 db_.execute(sql.c_str());
