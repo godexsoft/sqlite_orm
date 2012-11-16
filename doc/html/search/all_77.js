@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['wrap_5ftype',['wrap_type',['../namespacesqlite_1_1orm.html#abe8720a806413c2af24f34aa6f6d4287',1,'sqlite::orm::wrap_type(std::string v)'],['../namespacesqlite_1_1orm.html#a2ac4810567871b44354f28f92f6ffaeb',1,'sqlite::orm::wrap_type(sql_date v)'],['../namespacesqlite_1_1orm.html#ad26993debf861e00d8b9fb09609d15d7',1,'sqlite::orm::wrap_type(bool v)'],['../namespacesqlite_1_1orm.html#ab0a43ec89596215f6066a3c8e2074270',1,'sqlite::orm::wrap_type(long v)'],['../namespacesqlite_1_1orm.html#adedda0c8d3b5790a3b1eabf20e3c0869',1,'sqlite::orm::wrap_type(int v)'],['../namespacesqlite_1_1orm.html#a9e8c54c58ddab4646f1c78d33df97139',1,'sqlite::orm::wrap_type(sqlite3_int64 v)'],['../namespacesqlite_1_1orm.html#ab8af3d826920419829b438902576fa4c',1,'sqlite::orm::wrap_type(double v)'],['../namespacesqlite_1_1orm.html#a00b4f8c624400d50c206fc61dd7b3021',1,'sqlite::orm::wrap_type(T v)']]]
+];
