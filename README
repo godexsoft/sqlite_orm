@@ -1,7 +1,9 @@
-Simple C++ ORM for SQLite.
+Simple C++ ORM for SQLite v0.1.
 Originally this was made to support simple cases in iOS games. For example storing scores.
 
 The ORM supports foreign collections and lazy loading.
+
+Released under New BSD license. See LICENSE file for more details.
 
 === Dependencies ===
 - Sqlite3pp (included. see ext)
